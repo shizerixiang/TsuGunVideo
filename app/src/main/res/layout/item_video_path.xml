@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="2dp"
+        android:elevation="1dp"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        app:cardBackgroundColor="@color/grey_50"
+        app:cardCornerRadius="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/id_main_video_image"
+                android:transitionName="@string/str_transition_thumb"
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/grey_600"
+                android:contentDescription="@string/str_main_video_image"
+                android:elevation="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_vector_loading" />
+
+            <TextView
+                android:id="@+id/id_main_item_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/id_main_video_image"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingEnd="2dp"
+                android:paddingStart="10dp"
+                android:text="@string/str_main_item_title"
+                android:textColor="@color/grey_800"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/id_main_item_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_main_item_path"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@id/id_main_video_image"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingEnd="2dp"
+                android:paddingStart="10dp"
+                android:text="@string/str_main_item_size"
+                android:textColor="@color/grey_600"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/id_main_item_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_main_item_size"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@id/id_main_video_image"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="@string/str_main_item_record"
+                android:textColor="@color/grey_600"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.tsugun.tsugunvideo.activity.InformationActivity"
+    tools:showIn="@layout/activity_information">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/id_info_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:background="@android:color/transparent"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/id_info_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/id_info_title_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/str_info_title_image"
+                android:fitsSystemWindows="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_image_title"
+                android:transitionName="@string/str_transition_thumb" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/id_info_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/block_info_content" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/id_info_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:onClick="onStartVideoClick"
+        app:layout_anchor="@id/id_info_toolbar_layout"
+        app:layout_anchorGravity="bottom|right"
+        app:srcCompat="@drawable/ic_play_arrow_black" />
+
+</android.support.design.widget.CoordinatorLayout>

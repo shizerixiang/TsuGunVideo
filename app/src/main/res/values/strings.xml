@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">次菌视频</string>
+    <string name="str_main_play">播放</string>
+    <string name="str_main_control_play">播放</string>
+    <string name="str_main_voice">音量</string>
+    <string name="str_main_bright">亮度</string>
+    <string name="str_main_search">搜索文件</string>
+    <string name="str_main_loading">正在搜索...</string>
+    <string name="str_main_duration">00:00:00</string>
+    <string name="str_main_division">/</string>
+    <string name="str_main_video_title">视频标题信息</string>
+    <string name="str_main_item_path">文件路径</string>
+    <string name="str_main_item_title">文件名</string>
+    <string name="str_main_video_image">视频截图</string>
+    <string name="str_main_item_size">文件大小</string>
+    <string name="str_main_item_record">播放记录</string>
+    <string name="str_main_item_empty">空空如也，什么都没有哦！</string>
+    <string name="str_main_item_search">点击搜索</string>
+    <string name="str_menu_item_search">扫描本地</string>
+    <string name="str_menu_item_clear">清空列表</string>
+    <string name="str_video_message">视频信息</string>
+    <string name="str_info_name">视频名称</string>
+    <string name="str_info_duration">视频时长</string>
+    <string name="str_info_size">文件大小</string>
+    <string name="str_info_path">文件路径</string>
+    <string name="str_info_record">播放记录</string>
+    <string name="str_info_ratio">视频分辨率</string>
+    <string name="str_transition_thumb">视频缩略图</string>
+    <string name="str_transition_fab">悬浮按钮共享</string>
+    <string name="str_info_title_image">信息标题图片</string>
+</resources>

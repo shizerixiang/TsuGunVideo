@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><!--fitsSystemWindows属性去除与状态栏的间距-->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_50"
+    android:fitsSystemWindows="true"
+    tools:context="com.tsugun.tsugunvideo.activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/id_video_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:layout_marginTop="-26dp"
+        android:background="@drawable/bg_image_title"
+        android:paddingTop="26dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/id_video_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlways">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/id_video_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_main_list_video_path"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-26dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <ProgressBar
+        android:id="@+id/id_video_loading"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/bar_progress_option_btn_enabled"
+        android:elevation="6dp"
+        android:padding="2dp"
+        android:visibility="gone"
+        app:layout_anchor="@id/id_main_list_video_path"
+        app:layout_anchorGravity="center_horizontal|top" />
+
+    <!--content-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/id_video_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:onClick="onSearchButtonClick"
+        app:srcCompat="@drawable/ic_vector_video_search" />
+
+</android.support.design.widget.CoordinatorLayout>

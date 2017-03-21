@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_main_video_control"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_alignParentBottom="true"
+    android:animateLayoutChanges="true"
+    android:background="@color/tran_grey_900"
+    android:gravity="center_vertical"
+    android:layoutAnimation="@anim/layout_anim_video_controls"
+    android:visibility="visible"
+    tools:showIn="@layout/block_video_layout">
+
+    <Button
+        android:id="@+id/id_main_btn_play"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/ic_vector_control_play"
+        android:contentDescription="@string/str_main_control_play"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:id="@+id/id_main_btn_full"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_vector_control_full_screen"
+        android:contentDescription="@string/str_main_control_play"
+        android:scaleType="fitXY" />
+
+    <include layout="@layout/block_video_control_time" />
+
+</RelativeLayout>

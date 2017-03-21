@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_main_video_title"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    android:layout_gravity="top"
+    android:background="@color/tran_grey_900"
+    android:gravity="center"
+    android:layoutAnimation="@anim/layout_anim_video_title"
+    tools:showIn="@layout/block_video_layout">
+
+    <Button
+        android:id="@+id/id_main_video_title_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/ic_vector_control_back" />
+
+    <TextView
+        android:id="@+id/id_main_video_title_name"
+        android:layout_width="240dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/id_main_video_title_back"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="@string/str_main_video_title"
+        android:textColor="@color/grey_100"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/id_main_video_title_setting"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/ic_vector_control_setting" />
+
+</RelativeLayout>

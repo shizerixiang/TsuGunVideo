@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_video_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-26dp"
+    android:elevation="8dp">
+
+    <com.tsugun.tsugunvideo.view.TsuGunVideo
+        android:id="@+id/id_main_video_player"
+        android:layout_width="match_parent"
+        android:layout_height="227dp"
+        android:foregroundGravity="center" />
+
+    <!--视频的头部标题信息-->
+    <include layout="@layout/block_video_title" />
+
+    <!--视频的基本控件-->
+    <include layout="@layout/block_video_controls" />
+
+    <!--设置系统亮度-->
+    <include layout="@layout/block_video_option_brightness" />
+
+    <!--设置系统声音-->
+    <include layout="@layout/block_video_option_voice" />
+
+</FrameLayout>

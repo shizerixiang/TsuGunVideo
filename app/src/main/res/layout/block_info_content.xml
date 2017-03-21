@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_information">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/id_info_name_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/str_info_name"
+                android:padding="6dp"
+                android:src="@drawable/ic_vector_video_name" />
+
+            <TextView
+                android:id="@+id/id_info_name_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/id_info_name_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/str_info_name"
+                android:textColor="@color/grey_800"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/id_info_name_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_info_name_title"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/id_info_name_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/str_info_name"
+                android:textColor="@color/grey_600"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/id_info_record_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/str_info_record"
+                android:padding="6dp"
+                android:src="@drawable/ic_vector_video_record" />
+
+            <TextView
+                android:id="@+id/id_info_record_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/id_info_record_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/str_info_record"
+                android:textColor="@color/grey_800"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/id_info_record_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_info_record_title"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/id_info_record_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/str_info_record"
+                android:textColor="@color/grey_600"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/id_info_duration_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/str_info_duration"
+                android:padding="6dp"
+                android:src="@drawable/ic_vector_video_duration" />
+
+            <TextView
+                android:id="@+id/id_info_duration_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/id_info_duration_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/str_info_duration"
+                android:textColor="@color/grey_800"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/id_info_duration_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_info_duration_title"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/id_info_duration_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/str_info_duration"
+                android:textColor="@color/grey_600"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/id_info_size_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/str_info_size"
+                android:padding="6dp"
+                android:src="@drawable/ic_vector_video_size" />
+
+            <TextView
+                android:id="@+id/id_info_size_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/id_info_size_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/str_info_size"
+                android:textColor="@color/grey_800"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/id_info_size_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_info_size_title"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/id_info_size_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/str_info_size"
+                android:textColor="@color/grey_600"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/id_info_ratio_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/str_info_ratio"
+                android:padding="6dp"
+                android:src="@drawable/ic_vector_video_ratio" />
+
+            <TextView
+                android:id="@+id/id_info_ratio_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/id_info_ratio_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/str_info_ratio"
+                android:textColor="@color/grey_800"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/id_info_ratio_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_info_ratio_title"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/id_info_ratio_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/str_info_ratio"
+                android:textColor="@color/grey_600"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/id_info_path_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/str_info_path"
+                android:padding="6dp"
+                android:src="@drawable/ic_vector_video_path" />
+
+            <TextView
+                android:id="@+id/id_info_path_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/id_info_path_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/str_info_path"
+                android:textColor="@color/grey_800"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/id_info_path_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_info_path_title"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/id_info_path_icon"
+                android:text="@string/str_info_path"
+                android:textColor="@color/grey_600"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
