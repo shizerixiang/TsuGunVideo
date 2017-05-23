@@ -85,8 +85,8 @@ public class InformationActivity extends AppCompatActivity
 
     private void initUI() {
         mNameTv.setText(mMediaInfo.getTitle());
-        mRecordTv.setText(ConverterUtil.getConvertedTime((int) mMediaInfo.getRecord()));
-        mDurationMsgTv.setText(ConverterUtil.getConvertedTime((int) mMediaInfo.getDuration()));
+        mRecordTv.setText(ConverterUtil.getConvertedTime((int) mMediaInfo.getRecord(), ConverterUtil.ACCURATE_TO_HOUR));
+        mDurationMsgTv.setText(ConverterUtil.getConvertedTime((int) mMediaInfo.getDuration(), ConverterUtil.ACCURATE_TO_HOUR));
         mSizeTv.setText(ConverterUtil.getConvertedSize(mMediaInfo.getSize()));
         mRatioTv.setText((int) mMediaInfo.getWidth() + " X " + (int) mMediaInfo.getHeight());
         mPathTv.setText(mMediaInfo.getUrl());

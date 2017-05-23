@@ -135,7 +135,7 @@ public class VideoActivity extends AppCompatActivity {
         mMediaFileInfo = mInfoFinder.getFileInfoByUrl(videoUrl);
         String name = mMediaFileInfo.getTitle();
         String time = getResources().getText(R.string.str_info_duration) +
-                ConverterUtil.getConvertedTime((int) mMediaFileInfo.getDuration());
+                ConverterUtil.getConvertedTime((int) mMediaFileInfo.getDuration(), ConverterUtil.ACCURATE_TO_HOUR);
         String size = getResources().getText(R.string.str_info_size) +
                 ConverterUtil.getConvertedSize(mMediaFileInfo.getSize());
         String path = getResources().getText(R.string.str_info_path) + mMediaFileInfo.getUrl();
@@ -577,10 +577,10 @@ public class VideoActivity extends AppCompatActivity {
                             activity.isStopSendMsg = false;
                             // 获取总进度
                             activity.mTimeProgress.setMax(duration);
-                            activity.mDurationTv.setText(ConverterUtil.getConvertedTime(duration));
+                            activity.mDurationTv.setText(ConverterUtil.getConvertedTime(duration, ConverterUtil.ACCURATE_TO_HOUR));
                             // 获取当前进度
                             activity.mTimeProgress.setProgress(current);
-                            activity.mCurrentTv.setText(ConverterUtil.getConvertedTime(current));
+                            activity.mCurrentTv.setText(ConverterUtil.getConvertedTime(current, ConverterUtil.ACCURATE_TO_HOUR));
                             activity.mVideoTitleTv.setText(activity.mMediaFileInfo.getTitle());
                             activity.mVideoUIHandler.sendEmptyMessageDelayed(
                                     PROGRESS_BAR_UPDATE, 240);

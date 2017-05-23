@@ -500,10 +500,10 @@ public class VideoPlayer extends FrameLayout {
                             player.isStopSendMsg = false;
                             // 获取总进度
                             player.mTimeProgress.setMax(duration);
-                            player.mDurationTv.setText(ConverterUtil.getConvertedTime(duration));
+                            player.mDurationTv.setText(ConverterUtil.getConvertedTime(duration, ConverterUtil.ACCURATE_TO_HOUR));
                             // 获取当前进度
                             player.mTimeProgress.setProgress(current);
-                            player.mCurrentTv.setText(ConverterUtil.getConvertedTime(current));
+                            player.mCurrentTv.setText(ConverterUtil.getConvertedTime(current, ConverterUtil.ACCURATE_TO_HOUR));
                             player.mVideoTitleTv.setText(player.mMediaFileInfo.getTitle());
                             player.mVideoUIHandler.sendEmptyMessageDelayed(
                                     PROGRESS_BAR_UPDATE, 240);

@@ -58,7 +58,7 @@ public class VideoListAdapter extends RecyclerView.Adapter<VideoListAdapter.Recy
         holder.mVideoSize.setText(ConverterUtil.getConvertedSize(
                 mData.get(position).getSize()));
         holder.mVideoRecord.setText(ConverterUtil.getConvertedTime(
-                (int) mData.get(position).getDuration()));
+                (int) mData.get(position).getDuration(), ConverterUtil.ACCURATE_TO_HOUR));
         holder.mVideoThumbnail.setImageDrawable(mContext.getDrawable(R.drawable.img_vector_loading));
         // 添加验证缩略图标签，防止错位
         holder.mVideoThumbnail.setTag(mData.get(position).getUrl());
